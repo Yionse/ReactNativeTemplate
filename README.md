@@ -1,2 +1,6 @@
-# SelfChart
-一个前后端分离的实时聊天App。前端技术基于ReactNative，后端技术基于SSM，数据库使用MySQL
+# RN 模版
+
+- 由于 RN 真的恶心，所以创了这个模版，使用 RN0.64.4 版本
+- Jdk 8
+- node 16
+- 另外安装了 nativeBase，ReactNavigation 库
