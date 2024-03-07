@@ -53,7 +53,12 @@ export default function Home() {
   ).current;
   return (
     <>
-      <View flex={1} {...panResponder.panHandlers} position={'relative'}>
+      <View
+        flex={1}
+        {...panResponder.panHandlers}
+        position={'relative'}
+        // 奇怪-必须要设置background才可以覆盖住下面的Tab
+        background={'blue.100'}>
         <Tab.Navigator>
           <Tab.Screen name="Message" component={Message} />
           <Tab.Screen name="Contact" component={Contact} />
