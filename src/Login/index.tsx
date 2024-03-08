@@ -9,7 +9,7 @@ export default function Login() {
       <Text>登录</Text>
       <Button
         onPress={() => {
-          navigation.navigate('Home' as never);
+          navigation.navigate('DrawerHome' as never);
         }}>
         去Home
       </Button>

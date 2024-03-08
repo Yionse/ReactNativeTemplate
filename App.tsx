@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Login from './src/Login';
 import Home from './src/Home';
 import {Dimensions, PanResponder} from 'react-native';
+import DrawerHome from './src/Home/DrawerHome';
 
 const Stack = createNativeStackNavigator();
 
@@ -58,7 +59,10 @@ function Main() {
         headerShown: false,
       }}>
       <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Home" component={Home} />
+      {/* 原生Home，监听右滑事件 */}
+      {/* <Stack.Screen name="Home" component={Home} /> */}
+      {/* 使用了Drawer导航 */}
+      <Stack.Screen name="DrawerHome" component={DrawerHome} />
     </Stack.Navigator>
   );
 }

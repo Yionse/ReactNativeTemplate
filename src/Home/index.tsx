@@ -2,8 +2,7 @@ import React, {useCallback, useRef, useState} from 'react';
 import {Dimensions, PanResponder} from 'react-native';
 import {Text, View} from 'native-base';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Message from './Message';
-import Contact from './Contact';
+import SonHome from './SonHome';
 
 const Tab = createBottomTabNavigator();
 
@@ -59,10 +58,7 @@ export default function Home() {
         position={'relative'}
         // 奇怪-必须要设置background才可以覆盖住下面的Tab
         background={'blue.100'}>
-        <Tab.Navigator>
-          <Tab.Screen name="Message" component={Message} />
-          <Tab.Screen name="Contact" component={Contact} />
-        </Tab.Navigator>
+        <SonHome />
       </View>
       <View
         style={{
