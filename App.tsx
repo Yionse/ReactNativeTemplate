@@ -2,10 +2,11 @@ import React, {useCallback, useRef, useState} from 'react';
 import {NativeBaseProvider, Text, View} from 'native-base';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Login from './src/Login';
-import Home from './src/Home';
+import Login from '@/Login';
+import Home from '@/Home';
+``;
 import {Dimensions, PanResponder} from 'react-native';
-import DrawerHome from './src/Home/DrawerHome';
+import DrawerHome from '@/Home/DrawerHome';
 
 const Stack = createNativeStackNavigator();
 
@@ -66,7 +67,6 @@ function Main() {
     </Stack.Navigator>
   );
 }
-
 const App = () => {
   return (
     <NativeBaseProvider>
